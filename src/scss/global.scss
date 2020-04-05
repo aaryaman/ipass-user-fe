@@ -50,7 +50,7 @@ label,
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 50px;
+    padding: 4rem 1rem;
 }
 .content-wrap {
     .logo {
@@ -119,6 +119,7 @@ label,
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
+    width: 100%;
     img {
         max-width: 100px;
         margin-right: 1rem;
@@ -141,4 +142,8 @@ select {
     .title {
         margin-bottom: 2rem;
     }
+}
+
+.dashboard-container {
+    width: 100%;
 }

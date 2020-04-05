@@ -44,8 +44,19 @@ const routes = [
         },
         children: [
             {
-                path: 'lab-details',
-                component: LabDetails
+                path: '/verify-otp',
+                name: VerifyOTP.name,
+                component: VerifyOTP
+            },
+            {
+                path: '/verify',
+                name: PassVerifier,
+                component: PassVerifier
+            },
+            {
+                path: '/certificate/:id',
+                name: Certificate,
+                component: Certificate
             }
         ]
     },
@@ -58,11 +69,6 @@ const routes = [
         path: '/register',
         name: Register.name,
         component: Register
-    },
-    {
-        path: '/verify-otp',
-        name: VerifyOTP.name,
-        component: VerifyOTP
     },
     {
         path: '/reset-password',
@@ -86,16 +92,6 @@ const routes = [
         //         next();
         //     } else next('/login');
         // }
-    },
-    {
-        path: '/verify',
-        name: PassVerifier,
-        component: PassVerifier
-    },
-    {
-        path: '/certificate/:id',
-        name: Certificate,
-        component: Certificate
     },
     {
         path: '*',

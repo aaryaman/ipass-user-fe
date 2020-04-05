@@ -1,7 +1,6 @@
 <template>
-    <section class="page-content page-wrap">
+    <section>
         <div class="content-wrap">
-            <logo />
             <div class="form-wrap">
                 <h2 class="has-text-centered">Verify your ImmunoPass</h2>
 
@@ -23,12 +22,7 @@
     </section>
 </template>
 <script>
-import Logo from '../components/Logo.vue';
-export default {
-    components: {
-        Logo
-    }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

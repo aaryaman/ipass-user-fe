@@ -1,13 +1,15 @@
 <template>
-    <div class="dashboard-container">
-        <app-header />
-        <router-view />
+    <div class="page-wrap">
+        <div class="dashboard-container">
+            <logo />
+            <router-view />
+        </div>
     </div>
 </template>
 <script>
-import AppHeader from '../components/AppHeader.vue';
+import Logo from '../components/Logo.vue';
 
 export default {
-    components: { AppHeader }
+    components: { Logo }
 };
 </script>
