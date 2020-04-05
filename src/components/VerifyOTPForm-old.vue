@@ -3,6 +3,11 @@
         <div class="title">Enter OTP</div>
 
         <div></div>
+
+        <div class="subtitle is-6">
+            Enter OTP sent to:
+            <span>{{ emailId }}</span>
+        </div>
         <section>
             <form @submit.prevent.stop>
                 <b-field
@@ -28,7 +33,7 @@
                         expanded
                         native-type="submit"
                         type="is-primary"
-                        >Verify</b-button
+                        >Verify email</b-button
                     >
                 </div>
             </form>
@@ -38,6 +43,15 @@
                 <span class="m-r-8">Didn’t receive the OTP?</span>
                 <a @click="resendOTP" class="has-text-weight-semibold"
                     >Resend OTP</a
+                >
+            </div>
+
+            <br />
+
+            <div class="is-size-6">
+                <span class="m-r-8">Incorrect email?</span>
+                <a @click="$router.go(-1)" class="has-text-weight-semibold"
+                    >Go Back</a
                 >
             </div>
         </section>
@@ -127,7 +141,11 @@ export default {
             }
         }
     },
-    mounted() {},
+    mounted() {
+        if (!this.emailId) {
+            this.$router.replace('/login');
+        }
+    },
     created() {}
 };
 </script>
