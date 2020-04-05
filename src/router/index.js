@@ -93,7 +93,7 @@ const routes = [
         component: PassVerifier
     },
     {
-        path: '/certificate',
+        path: '/certificate/:id',
         name: Certificate,
         component: Certificate
     },
