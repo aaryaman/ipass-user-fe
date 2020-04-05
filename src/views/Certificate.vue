@@ -51,8 +51,11 @@
                     </div>
                     <div class="columns">
                         <div class="column is-full">
-                            <div class="box has-text-success">
+                            <div class="box has-text-success" v-if="isValid">
                                 <h4>This certificate is valid!</h4>
+                            </div>
+                            <div class="box has-text-danger" v-else>
+                                <h4>This certificate is invalid!</h4>
                             </div>
                         </div>
                     </div>
@@ -61,11 +64,15 @@
         </div>
     </section>
 </template>
-
 <script>
-export default {};
+export default {
+    computed: {
+        isValid() {
+            return this.$route.params.id === 'ASDFGH';
+        }
+    }
+};
 </script>
-
 <style lang="scss" scoped>
 .label {
     margin-right: 1rem;

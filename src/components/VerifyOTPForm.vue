@@ -1,8 +1,6 @@
 <template>
     <div class="verify-otp-form">
         <div class="title">Enter OTP</div>
-
-        <div></div>
         <section>
             <form @submit.prevent.stop>
                 <b-field
