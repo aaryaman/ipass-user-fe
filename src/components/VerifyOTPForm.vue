@@ -1,5 +1,5 @@
 <template>
-    <div class="verify-otp-form">
+    <div class="verify-otp-form form-wrap">
         <div class="title">Enter OTP</div>
         <section>
             <form @submit.prevent.stop>
