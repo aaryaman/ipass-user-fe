@@ -1,8 +1,6 @@
 <template>
-    <section class="page-wrap">
+    <section>
         <div class="content-wrap">
-            <logo />
-
             <verify-o-t-p-form></verify-o-t-p-form>
         </div>
     </section>
@@ -10,7 +8,6 @@
 
 <script>
 import VerifyOTPForm from '../components/VerifyOTPForm.vue';
-import Logo from '../components/Logo.vue';
 
 export default {
     name: 'VerifyOTP',
@@ -18,8 +15,7 @@ export default {
         emailId: String
     },
     components: {
-        VerifyOTPForm,
-        Logo
+        VerifyOTPForm
     }
 };
 </script>
