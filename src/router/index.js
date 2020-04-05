@@ -49,7 +49,7 @@ const routes = [
                 component: VerifyOTP
             },
             {
-                path: '/verify',
+                path: '/',
                 name: PassVerifier,
                 component: PassVerifier
             },
