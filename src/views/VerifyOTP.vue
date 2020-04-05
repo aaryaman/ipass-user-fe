@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <sign-up-layout>
+    <section class="page-wrap">
+        <div class="content-wrap">
+            <logo />
+
             <verify-o-t-p-form></verify-o-t-p-form>
-        </sign-up-layout>
-    </div>
+        </div>
+    </section>
 </template>
 
 <script>
-import SignUpLayout from '../components/SignUpLayout.vue';
 import VerifyOTPForm from '../components/VerifyOTPForm.vue';
+import Logo from '../components/Logo.vue';
 
 export default {
     name: 'VerifyOTP',
@@ -16,8 +18,8 @@ export default {
         emailId: String
     },
     components: {
-        SignUpLayout,
-        VerifyOTPForm
+        VerifyOTPForm,
+        Logo
     }
 };
 </script>

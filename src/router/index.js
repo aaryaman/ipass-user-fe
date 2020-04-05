@@ -9,6 +9,8 @@ import ReEnterEmail from '../views/ReEnterEmail.vue';
 import ResetPassword from '../views/ResetPassword.vue';
 import Static from '../views/static';
 import GetOTP from '../views/static/GetOTP.vue';
+import PassVerifier from '../views/PassVerifier.vue';
+import Certificate from '../views/Certificate.vue';
 // import LabDetails from '../views/static/LabDetails.vue';
 import NewDashboard from '../views/static/NewDashboard.vue';
 
@@ -84,6 +86,16 @@ const routes = [
         //         next();
         //     } else next('/login');
         // }
+    },
+    {
+        path: '/verify',
+        name: PassVerifier,
+        component: PassVerifier
+    },
+    {
+        path: '/certificate/:id',
+        name: Certificate,
+        component: Certificate
     },
     {
         path: '*',
