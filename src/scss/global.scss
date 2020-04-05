@@ -119,3 +119,21 @@ label,
 select {
     width: 100%;
 }
+
+.voucher-section {
+    padding: 4rem 1rem;
+
+    .logo {
+        max-width: 100px;
+        margin: 0 auto;
+    }
+}
+
+.voucher-details {
+    border: 2px solid $grey;
+    padding: 2rem;
+
+    .title {
+        margin-bottom: 2rem;
+    }
+}

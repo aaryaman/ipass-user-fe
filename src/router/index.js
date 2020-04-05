@@ -10,6 +10,7 @@ import ResetPassword from '../views/ResetPassword.vue';
 import Static from '../views/static';
 import GetOTP from '../views/static/GetOTP.vue';
 import PassVerifier from '../views/PassVerifier.vue';
+import Certificate from '../views/Certificate.vue';
 // import LabDetails from '../views/static/LabDetails.vue';
 import NewDashboard from '../views/static/NewDashboard.vue';
 
@@ -90,6 +91,11 @@ const routes = [
         path: '/verify',
         name: PassVerifier,
         component: PassVerifier
+    },
+    {
+        path: '/certificate',
+        name: Certificate,
+        component: Certificate
     },
     {
         path: '*',
