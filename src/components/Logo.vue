@@ -1,6 +1,7 @@
 <template>
     <div class="logo">
-        <img src="../assets/gov-mah.png" alt="" />
+        <img src="../assets/gov-mah.png" alt />
+        <img src="../assets/bmc.jpeg" alt />
     </div>
 </template>
 

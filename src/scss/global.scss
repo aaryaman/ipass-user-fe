@@ -115,6 +115,16 @@ label,
     margin-bottom: 20px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    img {
+        max-width: 100px;
+        margin-right: 1rem;
+    }
+}
+
 .select,
 select {
     width: 100%;
@@ -122,11 +132,6 @@ select {
 
 .voucher-section {
     padding: 4rem 1rem;
-
-    .logo {
-        max-width: 100px;
-        margin: 0 auto;
-    }
 }
 
 .voucher-details {
