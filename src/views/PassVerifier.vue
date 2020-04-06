@@ -3,14 +3,14 @@
         <div class="content-wrap">
             <div class="form-wrap" v-if="verifyForm">
                 <h2 class="has-text-centered">Verify your ImmunoPass</h2>
-                <b-field label="Document type">
+                <b-field label="ID Type">
                     <b-select placeholder="Select one">
-                        <option>Mobile No.</option>
-                        <option>Aadhar card</option>
-                        <option>Voucher No.</option>
+                        <option>Mobile Number</option>
+                        <option>Aadhaar Card</option>
+                        <option>Voucher Number</option>
                     </b-select>
                 </b-field>
-                <b-field label="Document Number" label-position="labelPosition">
+                <b-field label="ID Number" label-position="labelPosition">
                     <b-input v-model="code"></b-input>
                 </b-field>
                 <b-button

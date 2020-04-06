@@ -12,7 +12,7 @@
                                 class="has-text-weight-bold label is-inline-block"
                                 >Name:</span
                             >
-                            <span>User Name</span>
+                            <span>Aaryaman Vir</span>
                         </div>
                     </div>
                     <div class="columns">
@@ -21,14 +21,14 @@
                                 class="has-text-weight-bold label is-inline-block"
                                 >Gender:</span
                             >
-                            <span>M / F</span>
+                            <span>M</span>
                         </div>
                         <div class="column is-half">
                             <span
                                 class="has-text-weight-bold label is-inline-block"
                                 >Age:</span
                             >
-                            <span>25</span>
+                            <span>27</span>
                         </div>
                     </div>
                     <div class="columns">
@@ -52,10 +52,10 @@
                     <div class="columns">
                         <div class="column is-full">
                             <div class="box has-text-success" v-if="isValid">
-                                <h4>This certificate is valid!</h4>
+                                <h4>This user has immunity from coronavirus!</h4>
                             </div>
                             <div class="box has-text-danger" v-else>
-                                <h4>This certificate is invalid!</h4>
+                                <h4>This user does not have immunity from coronavirus!</h4>
                             </div>
                         </div>
                     </div>
